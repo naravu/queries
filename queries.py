@@ -33,13 +33,7 @@ responses = {}
 
 for i, q in enumerate(questions):
     st.subheader(q["question"])
-    if len(q["options"]) <= 6:
-        selected = st.multiselect("Select all that apply:", q["options"], key=f"q{i}")
-    else:
-        selected = []
-        for opt in q["options"]:
-            if st.checkbox(opt, key=f"{i}_{opt}"):
-                selected.append(opt)
+    selected = st.multiselect("Select all that apply:", q["options"], key=f"q{i}")
     responses[q["question"]] = selected
 
 # Store submissions in memory
@@ -54,7 +48,6 @@ if st.button("Submit"):
 if st.session_state["all_responses"]:
     df = pd.DataFrame(st.session_state["all_responses"])
 
-    # Show collected responses
     st.write("### Collected Responses")
     st.dataframe(df)
 
