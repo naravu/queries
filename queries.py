@@ -25,7 +25,7 @@ def load_questions(md_file):
     return questions
 
 # --- Streamlit UI ---
-st.title("📝 Questionnaire WebApp")
+st.title("📝 Questionnaire")
 st.write("Choose multiple options for each question below:")
 
 questions = load_questions("questions.md")
