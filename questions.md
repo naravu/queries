@@ -1,7 +1,3 @@
-Here’s your full questionnaire converted into a **Markdown file** with all 44 questions, each in the “Question 1 style” (heading + bullet options). This format is ready to drop into your Streamlit app:
-
----
-
 ```markdown
 ## Q1: What is developmental supportive care / early stimulation?
 - Kangaroo Mother Care
