@@ -21,7 +21,10 @@ def load_questions(md_file):
 
 # --- Streamlit UI ---
 st.title("📝 Questionnaire WebApp")
-st.write("Choose multiple options for each question below:")
+st.write("Please enter your name and answer the questions below:")
+
+# Name input
+name = st.text_input("Your Name")
 
 questions = load_questions("questions.md")
 
@@ -29,7 +32,7 @@ questions = load_questions("questions.md")
 if "all_responses" not in st.session_state:
     st.session_state["all_responses"] = []
 
-responses = {}
+responses = {"Name": name}
 
 # Render questions
 for i, q in enumerate(questions):
@@ -40,8 +43,11 @@ for i, q in enumerate(questions):
 
 # Submit button
 if st.button("Submit"):
-    st.session_state["all_responses"].append(responses.copy())
-    st.success("Responses recorded!")
+    if not name.strip():
+        st.warning("Please enter your name before submitting.")
+    else:
+        st.session_state["all_responses"].append(responses.copy())
+        st.success("Responses recorded!")
 
 # Export section
 if st.session_state["all_responses"]:
