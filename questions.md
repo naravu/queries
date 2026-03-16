@@ -16,3 +16,9 @@
 - Watermelon
 - Strawberry
 - Kiwi
+
+## Q3: Which cloud platforms are you familiar with?
+- AWS
+- Azure
+- Google Cloud
+- DigitalOcean
