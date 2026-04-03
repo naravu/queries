@@ -33,7 +33,7 @@ st.write("Please enter your name and answer the questions below:")
 # Name input
 name = st.text_input("Your Name")
 
-questions = load_questions("questions.md")
+questions = load_questions("questions+score.md")
 
 # Initialize session state
 if "all_responses" not in st.session_state:
