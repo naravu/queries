@@ -1,75 +1,76 @@
 ```markdown
 ## Q1: What is developmental supportive care / early stimulation?
-- Kangaroo Mother Care
-- Gentle handling
-- Proper positioning
-- Creating a calm, comfortable, and safe environment/surrounding
-- Reading/understanding baby’s cues
-- Reducing baby’s stress
-- Promoting bonding
-- Other
-- Do not know
+- Kangaroo Mother Care [1]
+- Gentle handling [1]
+- Proper positioning [1]
+- Creating a calm, comfortable, and safe environment/surrounding [0.5]
+- Reading/understanding baby’s cues [0.5]
+- Reducing baby’s stress [0.5]
+- Promoting bonding [0.5]
+- Other [0.5]
+- Do not know [0]
 
 ## Q2: Why does your baby need special care?
-- Get cold easily
-- May have feeding difficulty
-- Need help to gain weight
-- Have low immunity
-- Tire quickly and need more rest
-- Need good stimulation for development
-- Other
-- Do not know
+- Get cold easily [1]
+- May have feeding difficulty [1]
+- Need help to gain weight [1]
+- Have low immunity [0.5]
+- Tire quickly and need more rest [0.5]
+- Need good stimulation for development [0.5]
+- Other [0.5]
+- Do not know [0]
 
 ## Q3: Why are early stimulation and DSC important for your baby?
-- Helps in keeping baby warm
-- Promotes sleep
-- Helps weight gain
-- Improves brain development
-- Reduces stress and discomfort
-- Strengthens bonding with parents
-- Other
-- Do not know
-
+- Helps in keeping baby warm [1]
+- Promotes sleep [1]
+- Helps weight gain [1]
+- Improves brain development [1]
+- Reduces stress and discomfort [0.5]
+- Strengthens bonding with parents [0.5]
+- Other [0.5]
+- Do not know [0]
 ## Q4: The sense that is first to mature and should be stimulated most appropriately
-- Touch
-- Taste
-- Smell
-- Hearing
-- Vision
-- Do not know
+- Touch [2]
+- Taste [0]
+- Smell [0]
+- Hearing [0]
+- Vision [0]
+- Do not know [0]
 
 ## Q5: Why is it important to understand the order of the sense’s development?
-- Providing good stimulation
-- Avoid over stimulation
-- Reducing problems in the late developing senses
-- Other
-- Do not know
+- Providing good stimulation [1]
+- Avoid over stimulation [1]
+- Reducing problems in the late developing senses [1]
+- Other [0.5]
+- Do not know [0]
 
 ## Q6: What is the best way to provide good stimulation of touch sense of your baby?
-- By giving kangaroo mother care
-- Gentle touch
-- Massage
-- Nesting
-- Wrapping/swaddling
+- By giving kangaroo mother care [1.5]
+- Gentle touch [0.5]
+- Massage [0.5]
+- Nesting [0.5]
+- Wrapping/swaddling [0.5]
 
 ## Q7: The single best form of stimulating all senses
-- Kangaroo mother care
-- Massage
-- Positioning
-- Feeding
-- Other
-- Do not know
+- Kangaroo mother care [2]
+- Massage [0]
+- Positioning [0]
+- Feeding [0]
+- Other [0]
+- Do not know [0]
 
 ## Q8: How can you position a baby to provide Kangaroo mother care?
-- Upright
-- Head turned slightly upward and to a side
-- Legs flexed
-- Hands raised and flexed / frog like
-- Any other
+- Upright [2]
+- Head turned slightly upward and to a side [1]
+- Legs flexed [1]
+- Hands raised and flexed [1]
+- Frog like [1]
+- Any other [0.5]
 
 ## Q9: Do you continue practice Kangaroo mother care for your baby at home after discharge?
-- Yes
-- No
+- Yes [2]
+- No [0]
+--
 
 ## Q10: What all do you require to provide KMC while resting / sleeping?
 - Pillows / some support to raise head
