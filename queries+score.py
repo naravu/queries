@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from io import BytesIO
+import re
 
 def load_questions(md_file):
     questions = []
@@ -14,7 +15,17 @@ def load_questions(md_file):
                 current_question = line.replace("##", "").strip()
                 options = []
             elif line.startswith("-"):  # Option line
-                options.append(line.replace("-", "").strip())
+                # Extract option text and score
+                match = re.match(r"(.+?)\s*
+
+\[(\d+)\]
+
+$", line.replace("-", "").strip())
+                if match:
+                    option_text, score = match.groups()
+                    options.append({"text": option_text.strip(), "score": int(score)})
+                else:
+                    options.append({"text": line.replace("-", "").strip(), "score": 0})
         if current_question:
             questions.append({"question": current_question, "options": options})
     return questions
@@ -33,13 +44,23 @@ if "all_responses" not in st.session_state:
     st.session_state["all_responses"] = []
 
 responses = {"Name": name}
+total_score = 0
 
 # Render questions
 for i, q in enumerate(questions):
     st.subheader(q["question"])
-    responses[q["question"]] = st.multiselect(
-        "Select all that apply:", q["options"], key=f"q{i}"
+    option_labels = [opt["text"] for opt in q["options"]]
+    selected = st.multiselect(
+        "Select all that apply:", option_labels, key=f"q{i}"
     )
+    responses[q["question"]] = selected
+
+    # Add scores for selected options
+    for opt in q["options"]:
+        if opt["text"] in selected:
+            total_score += opt["score"]
+
+responses["Total Score"] = total_score
 
 # Submit button
 if st.button("Submit"):
@@ -47,7 +68,7 @@ if st.button("Submit"):
         st.warning("Please enter your name before submitting.")
     else:
         st.session_state["all_responses"].append(responses.copy())
-        st.success("Responses recorded!")
+        st.success(f"Responses recorded! Your total score is {total_score}")
 
 # Export section
 if st.session_state["all_responses"]:
