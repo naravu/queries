@@ -70,7 +70,7 @@
 ## Q9: Do you continue practice Kangaroo mother care for your baby at home after discharge?
 - Yes [2]
 - No [0]
---
+#########
 
 ## Q10: What all do you require to provide KMC while resting / sleeping?
 - Pillows / some support to raise head
