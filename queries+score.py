@@ -15,17 +15,17 @@ def load_questions(md_file):
                 current_question = line.replace("##", "").strip()
                 options = []
             elif line.startswith("-"):  # Option line
-                # Extract option text and score
+                # Regex to capture option text and score (supports integers and decimals)
                 match = re.match(r"(.+?)\s*
 
-\[(\d+)\]
+\[([\d\.]+)\]
 
 $", line.replace("-", "").strip())
                 if match:
                     option_text, score = match.groups()
-                    options.append({"text": option_text.strip(), "score": int(score)})
+                    options.append({"text": option_text.strip(), "score": float(score)})
                 else:
-                    options.append({"text": line.replace("-", "").strip(), "score": 0})
+                    options.append({"text": line.replace("-", "").strip(), "score": 0.0})
         if current_question:
             questions.append({"question": current_question, "options": options})
     return questions
@@ -37,7 +37,7 @@ st.write("Please enter your name and answer the questions below:")
 # Name input
 name = st.text_input("Your Name")
 
-questions = load_questions("questions+score.md")
+questions = load_questions("questions.md")
 
 # Initialize session state
 if "all_responses" not in st.session_state:
