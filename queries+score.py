@@ -78,12 +78,12 @@ if st.session_state["all_responses"]:
     st.dataframe(df)
 
     csv = df.to_csv(index=False).encode("utf-8")
-    st.download_button("Download CSV", csv, "responses.csv", "text/csv")
+    st.download_button("CSV", csv, "responses.csv", "text/csv")
 
     excel_buffer = BytesIO()
     df.to_excel(excel_buffer, index=False, engine="openpyxl")
     st.download_button(
-        "Download Excel",
+        "Excel",
         excel_buffer.getvalue(),
         "responses.xlsx",
         "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
