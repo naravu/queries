@@ -17,11 +17,7 @@ def load_questions(md_file):
                 current_question = line.replace("##", "").strip()
                 options = []
             elif line.startswith("-"):  # Option line
-                match = re.match(r"(.+?)\s*
-
-\[([\d\.]+)\]
-
-$", line.replace("-", "").strip())
+                match = re.match(r"(.+?)\s* \[([\d\.]+)\] $", line.replace("-", "").strip())
                 if match:
                     option_text, score = match.groups()
                     options.append({"text": option_text.strip(), "score": float(score)})
