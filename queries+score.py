@@ -16,9 +16,7 @@ def load_questions(md_file):
                 options = []
             elif line.startswith("-"):  # Option line
                 # Regex to capture option text and score (supports integers and decimals)
-                match = re.match(r"(.+?)\s*
-
-\[([\d\.]+)\]
+                match = re.match(r"(.+?)\s* \[([\d\.]+)\]
 
 $", line.replace("-", "").strip())
                 if match:
