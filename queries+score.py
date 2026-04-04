@@ -16,7 +16,11 @@ def load_questions(md_file):
                 options = []
             elif line.startswith("-"):  # Option line
                 # Regex to capture option text and score (supports integers and decimals)
-                match = re.match(r"(.+?)\s* \[([\d\.]+)\] $", line.replace("-", "").strip())
+                match = re.match(r"(.+?)\s*
+
+\[([\d\.]+)\]
+
+$", line.replace("-", "").strip())
                 if match:
                     option_text, score = match.groups()
                     options.append({"text": option_text.strip(), "score": float(score)})
@@ -46,15 +50,16 @@ total_score = 0
 for i, q in enumerate(questions):
     st.subheader(q["question"])
     option_labels = [opt["text"] for opt in q["options"]]
-    selected = st.multiselect(
-        "Select all that apply:", option_labels, key=f"q{i}"
-    )
-    responses[q["question"]] = selected
+    selected = st.multiselect("Select all that apply:", option_labels, key=f"q{i}")
 
-    # Add scores for selected options
+    # Store only summed score for this question (no brackets, no option text)
+    question_score = 0
     for opt in q["options"]:
         if opt["text"] in selected:
+            question_score += opt["score"]
             total_score += opt["score"]
+
+    responses[q["question"]] = question_score  # numeric score only
 
 responses["Total Score"] = total_score
 
