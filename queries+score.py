@@ -48,7 +48,7 @@ for i, q in enumerate(questions):
     option_labels = [opt["text"] for opt in q["options"]]
     selected = st.multiselect("Select all that apply:", option_labels, key=f"q{i}")
 
-    # Sum scores for selected options (numeric only, no brackets)
+    # Sum scores for selected options
     question_score = sum(opt["score"] for opt in q["options"] if opt["text"] in selected)
     responses[q["question"]] = question_score
     total_score += question_score
