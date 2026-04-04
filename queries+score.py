@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 import re
-from datetime import datetime
 
 def load_questions(md_file):
     questions = []
@@ -17,7 +16,11 @@ def load_questions(md_file):
                 options = []
             elif line.startswith("-"):  # Option line
                 # Regex to capture option text and score (supports integers and decimals)
-                match = re.match(r"(.+?)\s*\[([\d\.]+)\] $", line.replace("-", "").strip())
+                match = re.match(r"(.+?)\s*
+
+\[([\d\.]+)\]
+
+$", line.replace("-", "").strip())
                 if match:
                     option_text, score = match.groups()
                     options.append({"text": option_text.strip(), "score": float(score)})
@@ -49,14 +52,16 @@ for i, q in enumerate(questions):
     option_labels = [opt["text"] for opt in q["options"]]
     selected = st.multiselect("Select all that apply:", option_labels, key=f"q{i}")
 
-    # Calculate summed score for this question
-    question_score = sum(opt["score"] for opt in q["options"] if opt["text"] in selected)
-    # Store score with square brackets
-    responses[q["question"]] = f"[{question_score}]"
-    total_score += question_score
+    # Store only scores for selected options
+    selected_scores = []
+    for opt in q["options"]:
+        if opt["text"] in selected:
+            selected_scores.append(opt["score"])
+            total_score += opt["score"]
 
-# Store total score also with square brackets
-responses["Total Score"] = f"[{total_score}]"
+    responses[q["question"]] = selected_scores  # numeric scores only
+
+responses["Total Score"] = total_score
 
 # Submit button
 if st.button("Submit"):
@@ -64,13 +69,7 @@ if st.button("Submit"):
         st.warning("Please enter your name before submitting.")
     else:
         st.session_state["all_responses"].append(responses.copy())
-        st.success(f"Responses recorded! Your total score is [{total_score}]")
-
-        # --- Save responses locally with timestamp ---
-        df = pd.DataFrame(st.session_state["all_responses"])
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"responses_{timestamp}.csv"
-        df.to_csv(filename, index=False)
+        st.success(f"Responses recorded! Your total score is {total_score}")
 
 # Export section
 if st.session_state["all_responses"]:
