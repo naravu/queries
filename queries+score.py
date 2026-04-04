@@ -51,10 +51,12 @@ for i, q in enumerate(questions):
 
     # Calculate summed score for this question
     question_score = sum(opt["score"] for opt in q["options"] if opt["text"] in selected)
-    responses[q["question"]] = question_score
+    # Store score with square brackets
+    responses[q["question"]] = f"[{question_score}]"
     total_score += question_score
 
-responses["Total Score"] = total_score
+# Store total score also with square brackets
+responses["Total Score"] = f"[{total_score}]"
 
 # Submit button
 if st.button("Submit"):
@@ -62,7 +64,7 @@ if st.button("Submit"):
         st.warning("Please enter your name before submitting.")
     else:
         st.session_state["all_responses"].append(responses.copy())
-        st.success(f"Responses recorded! Your total score is {total_score}")
+        st.success(f"Responses recorded! Your total score is [{total_score}]")
 
         # --- Save responses locally with timestamp ---
         df = pd.DataFrame(st.session_state["all_responses"])
@@ -70,6 +72,7 @@ if st.button("Submit"):
         filename = f"responses_{timestamp}.csv"
         df.to_csv(filename, index=False)
 
+# Export section
 if st.session_state["all_responses"]:
     df = pd.DataFrame(st.session_state["all_responses"])
     st.write("### Collected Responses")
