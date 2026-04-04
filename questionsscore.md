@@ -70,51 +70,51 @@
 ## Q9: Do you continue practice Kangaroo mother care for your baby at home after discharge?
 - Yes [2]
 - No [0]
-#########
 
 ## Q10: What all do you require to provide KMC while resting / sleeping?
-- Pillows / some support to raise head
-- Something to keep the baby secure – shawl/cloth/KMC bag
-- Reclining chair
-- Any other
+- Pillows / some support to raise head [1]
+- Something to keep the baby secure – shawl/cloth/KMC bag [1]
+- Reclining chair [1]
+- Any other [0.5]
 
 ## Q11: What is the duration of KMC?
-- One session (minutes or hours)
-- One day (minutes or hours)
+- One session? …………….. (minutes or hours) [2]
+- One day? ……………………. (mins or hours) [2]
 
 ## Q12: Can anyone else provide KMC? Who can help at home to continue KMC?
-- Yes
-- No
-- Mother
-- Father
-- Aunt/Uncle
-- Grandmother
-- Grandfather
-- Any other
+- Yes [1]
+- No [0]
+- Mother [1]
+- Father [1]
+- Aunt/Uncle [1]
+- Grandmother [1]
+- Grandfather [1]
+- Any other [0.5]
 
 ## Q13: What must you check of the baby, when you are giving KMC?
-- Breathing
-- Activity
-- Colour
-- Temperature: Touching legs/hands & abdomen
-- Heartbeat
+- Breathing [2]
+- Activity [1]
+- Colour [1]
+- Temperature: Touching legs/hands & abdomen [1]
+- Heartbeat [0.5]
 
 ## Q14: How do you feel when you give KMC?
-- Happy
-- Good
-- Fear
-- Stressed
-- Anxious
-- Nice
-- Any other
+- Happy [1]
+- Good [1]
+- Fear [0]
+- Stressed [0]
+- Anxious [0]
+- Nice [1]
+- Any other [0]
 
 ## Q15: What is the best feed for your baby?
-- Direct breastfeeding
-- Expressed breastmilk
-- Formula feed
-- Animal milk
-- Express breast milk via pallada/cup/spoon if not sucking
+- Direct Breastfeeding is the best feeding for your baby. [2]
+- Expressed breastmilk [2]
+- Formula feed [0]
+- Animal milk [0]
+- If baby is not sucking at breast, Express breast milk, feed using pallada /cup or spoon. [1]
 
+####
 ## Q16: How often should you feed your baby?
 - Feed frequently, at least every 2–3 hours
 - 10 to 12 feeds per day till baby gains 2500 grams
