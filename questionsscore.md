@@ -132,12 +132,12 @@
 - Regular stools [0.5]
 
 ## Q19: What are signs your baby is not feeding well?
-- Baby sleeps through feeds
-- Poor sucking
-- Pulls away quickly
-- Fewer wet diapers
-- Vomits quickly
-- Stops feeding
+- Baby sleeps through feeds [0.25]
+- Poor sucking [0.25]
+- Pulls away feeding quickly [0.25]
+- Fewer wet diapers [0.5]
+- Vomits quickly [0.5]
+- Stops feeding [1]
 
 ## Q20: How can you do massage?
 - Fingers flat on infant’s body
