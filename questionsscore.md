@@ -114,23 +114,22 @@
 - Animal milk [0]
 - If baby is not sucking at breast, Express breast milk, feed using pallada /cup or spoon. [1]
 
-####
 ## Q16: How often should you feed your baby?
-- Feed frequently, at least every 2–3 hours
-- 10 to 12 feeds per day till baby gains 2500 grams
-- Watch for hunger cues like rooting, sucking fingers
+- Feed frequently, at least every 2–3 hours. [2]
+- 10 to 12 feeds per day till baby gains weight 2500 grams [1]
+- Watch for hunger cues like rooting, sucking fingers [1]
 
 ## Q17: How will you know your baby is hungry?
-- Baby sucks on fingers
-- Baby cries
-- Baby roots (moves towards cheek touch)
-- Baby makes mouth movements (lip smacking / opens mouth)
+- Baby sucks on fingers [0.5]
+- Baby cries [0.5]
+- Baby roots – moves towards anything that touches the baby’s cheek [0.5]
+- Baby makes mouth movements – lip smacking / opens mouth [0.5]
 
 ## Q18: How will you know your baby is getting enough milk?
-- 6–8 wet diapers/day
-- Baby is calm after feeds
-- Steady weight gain
-- Regular stools
+- 6–8 wet diapers/day [2]
+- Baby is calm after feeds [0.5]
+- Steady weight gain [1]
+- Regular stools [0.5]
 
 ## Q19: What are signs your baby is not feeding well?
 - Baby sleeps through feeds
