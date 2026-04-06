@@ -242,18 +242,18 @@
 - Coos or makes sounds [0.5]
 
 ## Q34: How can you interact/bond with your baby?
-- Kangaroo mother care
-- Talking or singing softly
-- Gentle touch
-- Eye contact during calm alert times
-- Responding to baby cues
+- By giving KMC [1]
+- Talking or singing softly [1]
+- Touching the baby gently [1]
+- Making eye contact during calm alert times [1]
+- Responding to baby cues such as cries, cooing etc [1]
 
 ## Q35: When do you swaddle/wrap at home?
-- During breastfeeding
-- During feeding (pallada/spoon)
-- While shifting/transferring
-- If baby’s feet/hands are cold
-- To protect sleep
+- During breastfeeding [0.5]
+- During feeding – Pallada/Spoon [0.5]
+- While shifting/transferring [0.5]
+- If baby’s feet and hands are cold [0.5]
+- To protect the baby’s sleep [0.5]
 
 ## Q36: Why is positioning and handling important?
 - Promotes comfort
