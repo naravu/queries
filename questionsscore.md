@@ -225,21 +225,21 @@
 - Irritable or crying all the time [0.5]
 
 ## Q32: How do you support your baby’s sleep?
-- Kangaroo mother care
-- Nesting
-- Wrapping
-- Allowing long, undisturbed sleep
-- Avoid frequent waking
-- Cluster care tasks
-- Keep room quiet
-- Dim lights
-- Maintain routine
+- By giving kangaroo mother care [0.5]
+- Providing Nesting [0.5]
+- Wrapping the baby [0.5]
+- Allowing long, undisturbed sleep periods [0.5]
+- Avoid frequent waking for “checking” [0.5]
+- Clustering care tasks/activities (diaper change + temperature check + feeding) [0.5]
+- Keeping the room quiet [0.5]
+- Dim lights [0.5]
+- Maintaining a routine for care of baby (feeding, sleep time, bathing time, play time) [0.5]
 
 ## Q33: How do you know if your baby is ready for interaction?
-- Bright open eyes
-- Smooth breathing
-- Reaching or soft movements
-- Coos or makes sounds
+- Bright open eyes [0.5]
+- Smooth breathing [0.5]
+- Reaching or soft movements [0.5]
+- Coos or makes sounds [0.5]
 
 ## Q34: How can you interact/bond with your baby?
 - Kangaroo mother care
