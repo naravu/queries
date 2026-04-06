@@ -140,73 +140,73 @@
 - Stops feeding [1]
 
 ## Q20: How can you do massage?
-- Fingers flat on infant’s body
-- Long, firm, gentle strokes with oily fingers
-- Massage whole body
-- Don’t know
-- I don’t massage
+- Fingers should be placed flat on the infant’s body [0.25]
+- Using long, firm, gentle strokes with oily fingers the whole [0.25]
+- Body of the baby is massaged [0.25]
+- Don’t know [0]
+- I don’t massage the baby [0]
 
 ## Q21: What is the sequence/order when you massage the baby’s body?
-- Start with legs
-- Move to arms and hands
-- Then chest, abdomen, and back
-- Finally, the face
+- Start massaging first the legs [0.5]
+- Move to the arms and hands [0.25]
+- Then the chest, the abdomen and back [0.25]
+- Finally, the face [0.25]
 
 ## Q22: What oil will you use for baby massage?
-- Coconut oil
-- Olive oil
-- Others
+- Coconut oil [0.25]
+- Olive oil [0.25]
+- Others [0.25]
 
 ## Q23: What do you understand by providing baby a healing/safe environment?
-- Keeping baby warm
-- Reduce infection
-- Promoting sleep
+- Keeping baby warm [0.75]
+- Reduce infection to the baby [0.5]
+- Promoting sleep [0.75]
 
 ## Q24: How do you know your baby’s temperature is normal?
-- Soles/feet pink and warm
-- Abdomen, feet, and hands warm
-- Hands and feet cold compared to abdomen
-- Don’t know
+- The soles/feet should be pink/warm [1]
+- The abdomen (tummy) of the baby and the baby’s feet and hands are warm [1]
+- Hands and feet are cold to touch in comparison to how the abdomen feels [0.5]
+- Don’t know [0]
 
 ## Q25: What should be done to keep your baby warm at home?
-- Kangaroo mother care
-- Cover the head
-- Swaddle/wrap
-- Dry quickly after sponging
-- Change diaper/cloth when wet
-- Add winter clothing (gloves, sweater, socks)
-- Keep away from drafts
+- Give Kangaroo mother care [1]
+- Cover the head [0.5]
+- Swaddle/wrap the baby [0.5]
+- Dry the baby quickly after sponging [0.5]
+- Change diaper/cloth when soiled or wet [0.5]
+- Add, in winter, gloves, sweater, and socks [0.5]
+- Keep the baby away from draft / near an open window or door [0.5]
 
 ## Q26: How would you think excessive noise affects the baby?
-- Harmful
-- Not harmful
-- Not sure
+- Harmful [0.5]
+- Not harmful [0.5]
+- Not sure [0]
 
 ## Q27: If harmful, how does it affect?
-- Causes stress
-- Reduces sleep
-- Causes hearing loss
-- Causes brain damage
-- Lowers intelligence
+- Causes stress [0.5]
+- Reduces sleep [0.5]
+- Causes hearing loss [0.5]
+- Cause brain damage [0.5]
+- Lowers intelligence [0.5]
 
 ## Q28: How can you make your home a healing/safe environment?
-- Dim lights
-- Speak softly
-- Silence alarms and phones quickly
-- Reduce noise (TV etc.)
-- Reduce overstimulation
+- Dim lights [0.5]
+- Speak softly [0.5]
+- Silence alarms and phones quickly [0.5]
+- Reduce noise by turning down the TV [0.5]
+- Reduce overstimulation [0.5]
 
 ## Q29: What steps should you take to protect your baby from infection?
-- Kangaroo mother care
-- Exclusive breastfeeding
-- Wash hands before contact
-- Avoid applications to umbilical stump
-- Keep home clean and dust free
-- Avoid contact with unwell people
-- Avoid crowded places
-- Avoid home remedies/traditional practices
-- Wash baby’s clothes with soap and sun dry
-- Others
+- Give Kangaroo mother care [2]
+- Exclusive breast feeding [2]
+- Wash your hands with soap and water before every contact with the baby [2]
+- Avoid any applications to the umbilical stump [1]
+- Keep the home environment clean and dust free [0.5]
+- Avoid contact of baby with all people who are unwell [0.5]
+- Avoid taking the baby to crowded places and functions [0.5]
+- Avoid any home remedies or traditional practices such as janamghutti/vasambu, honey, gripe water, etc. for the newborn baby [0.5]
+- Wash baby’s clothes with soap and water and sun dry them [0.5]
+- Others [0.5]
 
 ## Q30: When should you take your baby to the doctor?
 - For vaccination
