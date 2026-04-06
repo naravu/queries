@@ -294,28 +294,28 @@
 - Baby communicates through sounds [0.5]
 
 ## Q41: What are signs your baby is comfortable?
-- Smooth, relaxed breathing
-- Hands near mouth
-- Soft facial expression
-- Calm body
-- Sleeping peacefully
+- Smooth, relaxed breathing [0.25]
+- Hands near mouth [0.5]
+- Soft facial expression [0.5]
+- Calm body [0.5]
+- Sleeping peacefully [0.5]
 
 ## Q42: What are signs your baby is stressed or uncomfortable?
-- Finger splaying
-- Hiccups, yawning, color changes
-- Crying or grimacing
-- Stiff arms and legs
-- Rapid breathing
-- Looking away
+- Finger splaying (opening fingers wide) [0.25]
+- Hiccups, yawning, color changes [0.25]
+- Crying or grimacing [0.5]
+- Stiff arms and legs [0.5]
+- Rapid breathing [0.5]
+- Looking away [0.5]
 
 ## Q43: What should you do if your baby becomes overstimulated/uncomfortable?
-- Stop activity
-- Hold close in flexed position / containment
-- Dim lights
-- Reduce noise
-- Support hands to mouth
-- Talk or sing softly
+- Stop activity [0.5]
+- Hold close in flexed position / containment [1]
+- Dim lights [0.5]
+- Reduce noise [0.5]
+- Support hands to the mouth [0.5]
+- Talk or sing to baby in low tone [0.5]
 
 ## Q44: How long should special care continue?
-- Continuous process
-- Starts with the birth of the baby
+- Continuous process [0.5]
+- Starts with the birth of the baby [0.5]
