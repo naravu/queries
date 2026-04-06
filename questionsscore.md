@@ -209,20 +209,20 @@
 - Others [0.5]
 
 ## Q30: When should you take your baby to the doctor?
-- For vaccination
-- For checking weight
-- If baby is sick
-- Eye test
-- Hearing test
+- For vaccination [1]
+- For checking weight [0.5]
+- If baby is sick [0.5]
+- Eye test [0.5]
+- Hearing test [0.5]
 
 ## Q31: What are danger signs to watch out for?
-- Poor or not feeding well
-- Fast or difficult breathing
-- Feels cold/hot
-- Not waking/excessive sleepiness
-- Fits/convulsions
-- Poor weight gain
-- Irritable or crying all the time
+- Poor or not feeding well [1]
+- Fast or difficulty in breathing [1]
+- Feels cold/hot [0.5]
+- Not waking / Excessive sleepiness [1]
+- Fits / Convulsions [1]
+- Poor weight gain [0.5]
+- Irritable or crying all the time [0.5]
 
 ## Q32: How do you support your baby’s sleep?
 - Kangaroo mother care
