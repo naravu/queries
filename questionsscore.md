@@ -256,42 +256,42 @@
 - To protect the baby’s sleep [0.5]
 
 ## Q36: Why is positioning and handling important?
-- Promotes comfort
-- Reduces stress
-- Helps breathing
-- Supports brain
-- Helps motor development
-- Prevents physical problems
+- Promotes comfort [0.5]
+- Reduces stress [0.5]
+- Helps with breathing [0.5]
+- Supports brain [0.5]
+- Helps in motor development [0.5]
+- Prevents physical problems like head flattening, joint and muscle tightness [0.5]
 
 ## Q37: How should you position your baby at home?
-- Use nesting/rolled cloths for support
-- Hands towards mouth (self-soothing)
-- Head and body aligned
-- Avoid overstretching arms/legs
-- Always place on back for sleep
-- Allow free hand movement when swaddling
+- Use nesting or rolled cloths to support the baby on the sides and head [0.5]
+- Baby’s hands should come towards the mouth (self-soothing) [0.5]
+- Keep head and body aligned (straight) [0.5]
+- Avoid over-stretching arms and legs [0.5]
+- Always place baby on the back for sleep [0.5]
+- Allow free movement of hands when swaddling [0.5]
 
 ## Q38: How can you handle your baby gently?
-- Talk before touching
-- Touch feet first
-- Move to abdomen (hand hug)
-- Support head and hips slowly
-- Keep body close to chest while lifting
-- Avoid sudden loud sounds or bright light
+- First talk to the baby before touching the baby [0.5]
+- Then touch the baby’s feet first [0.5]
+- Then move to the abdomen – hand hug [0.5]
+- Finally, move slowly and support the baby’s head and hips [0.5]
+- Keep the baby’s body close to your chest while lifting [0.5]
+- Avoid sudden loud sounds or bright light [0.5]
 
 ## Q39: When to use comfort holding (containment)?
-- While calming
-- While massage
-- While changing diaper
-- While feeding
-- While sponging
-- While vaccination
+- While calming the baby [0.5]
+- While massage [0.5]
+- While changing diaper [0.5]
+- While feeding [0.5]
+- While sponging [0.5]
+- While vaccination [0.5]
 
 ## Q40: What is cue-based care?
-- Watching baby’s signals
-- Movements
-- Facial expressions
-- Sounds
+- Watching your baby’s signals to know what they need [0.5]
+- Baby communicates through movements [0.25]
+- Baby communicates through facial expressions [0.5]
+- Baby communicates through sounds [0.5]
 
 ## Q41: What are signs your baby is comfortable?
 - Smooth, relaxed breathing
