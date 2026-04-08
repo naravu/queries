@@ -45,10 +45,15 @@ for i, q in enumerate(questions):
     st.subheader(q["question"])
     option_labels = [opt["text"] for opt in q["options"]]
     selected = st.multiselect("Select all that apply:", option_labels, key=f"q{i}")
-    responses[q["question"]] = selected
+
+    # Store both selected options and their scores
+    selected_with_scores = []
     for opt in q["options"]:
         if opt["text"] in selected:
+            selected_with_scores.append(f"{opt['text']} ({opt['score']})")
             total_score += opt["score"]
+
+    responses[q["question"]] = "; ".join(selected_with_scores) if selected_with_scores else "None"
 
 responses["Total Score"] = total_score
 
@@ -71,8 +76,8 @@ if st.button("Submit"):
             subprocess.run(["git", "commit", "-m", f"Add responses at {timestamp}"], check=True)
 
             # Use GitHub token from Streamlit secrets
-            token = st.secrets["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API"]
-            repo_url = f"https://{token}@github.com/naravu/queries.git"
+            token = st.secrets["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"]
+            repo_url = f"https://{token}@github.com/USERNAME/REPO.git"
 
             # Push using token-authenticated URL
             subprocess.run(["git", "push", repo_url, "HEAD"], check=True)
