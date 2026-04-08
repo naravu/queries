@@ -86,7 +86,7 @@ if st.button("Submit"):
 
                 # Use GitHub token from Streamlit secrets
                 token = st.secrets["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"]
-                repo_url = f"https://{token}@github.com/USERNAME/REPO.git"
+                repo_url = f"https://{token}@github.com/naravu/queries.git"
                 subprocess.run(["git", "push", repo_url, "HEAD"], check=True)
 
                 st.success("Responses saved to GitHub repository successfully!")
