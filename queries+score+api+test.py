@@ -85,7 +85,7 @@ if st.button("Submit"):
                 subprocess.run(["git", "commit", "-m", f"Add responses at {timestamp}"], check=True)
 
                 # Use GitHub token from Streamlit secrets
-                token = st.secrets["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"]
+                token = st.secrets["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"]
                 repo_url = f"https://{token}@github.com/naravu/queries.git"
                 subprocess.run(["git", "push", repo_url, "HEAD"], check=True)
 
