@@ -43,14 +43,15 @@ total_score = 0
 
 for i, q in enumerate(questions):
     st.subheader(q["question"])
-    option_labels = [opt["text"] for opt in q["options"]]
+    # Show both option text and score in the combo box
+    option_labels = [f"{opt['text']} ({opt['score']})" for opt in q["options"]]
     selected = st.multiselect("Select all that apply:", option_labels, key=f"q{i}")
 
-    # Store both selected options and their scores
     selected_with_scores = []
     for opt in q["options"]:
-        if opt["text"] in selected:
-            selected_with_scores.append(f"{opt['text']} ({opt['score']})")
+        label = f"{opt['text']} ({opt['score']})"
+        if label in selected:
+            selected_with_scores.append(label)
             total_score += opt["score"]
 
     responses[q["question"]] = "; ".join(selected_with_scores) if selected_with_scores else "None"
@@ -73,15 +74,22 @@ if st.button("Submit"):
         try:
             # Stage and commit
             subprocess.run(["git", "add", filename], check=True)
-            subprocess.run(["git", "commit", "-m", f"Add responses at {timestamp}"], check=True)
+            subprocess.run(["git", "config", "--global", "user.name", "StreamlitBot"], check=False)
+            subprocess.run(["git", "config", "--global", "user.email", "bot@example.com"], check=False)
 
-            # Use GitHub token from Streamlit secrets
-            token = st.secrets["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"]
-            repo_url = f"https://{token}@github.com/USERNAME/REPO.git"
+            # Only commit if there are staged changes
+            status_result = subprocess.run(["git", "diff", "--cached", "--quiet"], check=False)
+            if status_result.returncode == 0:
+                st.warning("No changes staged for commit. Skipping Git commit.")
+            else:
+                subprocess.run(["git", "commit", "-m", f"Add responses at {timestamp}"], check=True)
 
-            # Push using token-authenticated URL
-            subprocess.run(["git", "push", repo_url, "HEAD"], check=True)
-            st.success("Responses saved to GitHub repository successfully!")
+                # Use GitHub token from Streamlit secrets
+                token = st.secrets["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"]
+                repo_url = f"https://{token}@github.com/USERNAME/REPO.git"
+                subprocess.run(["git", "push", repo_url, "HEAD"], check=True)
+
+                st.success("Responses saved to GitHub repository successfully!")
         except Exception as e:
             st.error(f"Failed to save to GitHub: {e}")
 
