@@ -18,11 +18,7 @@ def load_questions(md_file):
                 current_question = line.replace("##", "").strip()
                 options = []
             elif line.startswith("-"):  # Option line
-                match = re.match(r"(.+?)\s* 
-
-\[([\d\.]+)\]
-
- $", line.replace("-", "").strip())
+                match = re.match(r"(.+?)\s*\[([\d\.]+)\]$", line.replace("-", "").strip())
                 if match:
                     option_text, score = match.groups()
                     options.append({"text": option_text.strip(), "score": float(score)})
@@ -75,7 +71,7 @@ if st.button("Submit"):
             subprocess.run(["git", "commit", "-m", f"Add responses at {timestamp}"], check=True)
 
             # Use GitHub token from Streamlit secrets
-            token = st.secrets["API"]
+            token = st.secrets["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API"]
             repo_url = f"https://{token}@github.com/naravu/queries.git"
 
             # Push using token-authenticated URL
